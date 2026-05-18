@@ -455,6 +455,13 @@ p {
   overflow: hidden;
 }
 
+@media (min-width: 1061px) {
+  .workflow-map {
+    width: min(112%, 420px);
+    max-width: none;
+  }
+}
+
 .workflow-map::before {
   content: "";
   position: absolute;
@@ -555,6 +562,12 @@ p {
   grid-template-columns: minmax(260px, 0.74fr) minmax(0, 1.26fr);
   gap: 66px;
   align-items: start;
+}
+
+@media (min-width: 1061px) {
+  .about-grid .content-flow {
+    padding-top: 20px;
+  }
 }
 
 .portrait-card {
@@ -700,6 +713,23 @@ p {
   margin: 0;
   font-size: 13px;
   line-height: 1.62;
+}
+
+.system-caption-text {
+  display: grid;
+  gap: 5px;
+}
+
+.system-caption-en,
+.system-caption-cn {
+  margin: 0;
+}
+
+.system-caption-cn {
+  color: rgba(110, 102, 92, 0.86);
+  font-family: "Noto Sans SC", var(--body-font);
+  font-size: 12.5px;
+  line-height: 1.7;
 }
 
 .portrait-card strong {
