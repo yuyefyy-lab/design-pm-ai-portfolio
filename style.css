@@ -1359,7 +1359,10 @@ p {
 
   .hero-system-graphic {
     padding: 16px 14px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
+    height: auto;
+    max-height: none;
   }
 
   .hero-grid {
@@ -1377,9 +1380,11 @@ p {
 
   .system-caption {
     max-width: 100%;
+    margin-bottom: 0;
     padding-right: 12px;
+    padding-bottom: 4px;
     padding-left: 12px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .system-caption p,
@@ -1608,9 +1613,11 @@ p {
   .hero-system-graphic {
     gap: 4px;
     padding: 12px;
+    padding-bottom: 36px;
     margin-bottom: 32px;
     border-radius: 18px;
-    max-height: calc(100svh - 40px);
+    height: auto;
+    max-height: none;
   }
 
   .system-node {
@@ -1666,8 +1673,10 @@ p {
   .system-caption {
     margin-top: 6px;
     padding-top: 8px;
+    padding-bottom: 4px;
     font-size: 11px;
     line-height: 1.28;
+    overflow: visible;
   }
 
   .system-caption .cn-text {
