@@ -13,6 +13,7 @@
   --olive: #6e7463;
   --dark-olive: #41483d;
   --shadow-soft: 0 18px 34px rgba(21, 26, 26, 0.08);
+  --side-visual-card-width: 400px;
   --heading-font: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
   --body-font: "Inter", "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -210,6 +211,13 @@ a {
   color: rgba(246, 240, 229, 0.68);
   font-size: clamp(11px, 0.9vw, 12px);
   line-height: 1.28;
+}
+
+@media (min-width: 1061px) {
+  .system-side:nth-of-type(5) span,
+  .system-side:nth-of-type(5) small {
+    transform: translateY(10px);
+  }
 }
 
 .system-center {
@@ -457,8 +465,8 @@ p {
 
 @media (min-width: 1061px) {
   .workflow-map {
-    width: min(112%, 420px);
-    max-width: none;
+    width: var(--side-visual-card-width);
+    max-width: var(--side-visual-card-width);
   }
 }
 
@@ -566,12 +574,18 @@ p {
 
 @media (min-width: 1061px) {
   .about-grid .content-flow {
-    padding-top: 20px;
+    padding-top: 18px;
+  }
+
+  .portrait-card {
+    width: var(--side-visual-card-width);
+    max-width: var(--side-visual-card-width);
+    justify-self: start;
   }
 }
 
 .portrait-card {
-  padding: 18px;
+  padding: 14px;
   border-radius: 12px;
   background: rgba(246, 240, 229, 0.68);
 }
@@ -579,9 +593,9 @@ p {
 .portrait-placeholder {
   position: relative;
   display: grid;
-  grid-template-rows: minmax(300px, auto) auto;
+  grid-template-rows: minmax(284px, auto) auto;
   min-height: 0;
-  padding: 22px 22px 24px;
+  padding: 18px 18px 20px;
   border: 1px solid rgba(21, 26, 26, 0.18);
   background:
     linear-gradient(150deg, rgba(229, 210, 160, 0.28), transparent 38%),
@@ -597,7 +611,7 @@ p {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 300px;
+  min-height: 284px;
   overflow: hidden;
 }
 
@@ -617,7 +631,7 @@ p {
   z-index: 1;
   display: grid;
   place-items: center;
-  width: min(70%, 250px);
+  width: min(64%, 210px);
   aspect-ratio: 1;
   padding: 28px;
   border: 1px solid rgba(196, 154, 74, 0.5);
@@ -680,8 +694,8 @@ p {
   position: relative;
   z-index: 2;
   display: grid;
-  gap: 12px;
-  padding-top: 14px;
+  gap: 9px;
+  padding-top: 12px;
   padding-bottom: 2px;
   border-top: 1px solid rgba(196, 154, 74, 0.42);
 }
@@ -689,7 +703,7 @@ p {
 .system-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
   color: var(--ink-black);
   font-size: 10px;
   font-weight: 800;
@@ -701,8 +715,8 @@ p {
 .system-strip span {
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
-  padding: 4px 8px;
+  min-height: 22px;
+  padding: 3px 7px;
   border: 1px solid rgba(196, 154, 74, 0.34);
   border-radius: 999px;
   background: rgba(246, 240, 229, 0.62);
