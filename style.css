@@ -1359,7 +1359,40 @@ p {
 
   .hero-system-graphic {
     padding: 16px 14px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
+  }
+
+  .hero-grid {
+    position: relative;
+    z-index: 0;
+    margin-top: 0;
+  }
+
+  .signature-mark {
+    position: static;
+    z-index: auto;
+    transform: none;
+    margin-top: 0;
+  }
+
+  .system-caption {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    overflow: hidden;
+  }
+
+  .system-caption p,
+  .system-caption .cn-text {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .system-caption .cn-text {
+    display: block;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .system-node {
@@ -1575,7 +1608,7 @@ p {
   .hero-system-graphic {
     gap: 4px;
     padding: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     border-radius: 18px;
     max-height: calc(100svh - 40px);
   }
@@ -1635,5 +1668,10 @@ p {
     padding-top: 8px;
     font-size: 11px;
     line-height: 1.28;
+  }
+
+  .system-caption .cn-text {
+    font-size: 11px;
+    line-height: 1.55;
   }
 }
